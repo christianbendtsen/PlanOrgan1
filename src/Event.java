@@ -10,18 +10,18 @@ public class Event {
 	private int tidStart;
 	private int tidSlut;
 
-	public M�de tilf�jM�de() {
-		// TODO - implement Event.tilf�jM�de
+	public Møde tilfojMøde() {
+		// TODO - implement Event.tilføjMøde
 		throw new UnsupportedOperationException();
 	}
 
-	public Transport tilf�jTransport() {
-		// TODO - implement Event.tilf�jTransport
+	public Transport tilføjTransport() {
+		// TODO - implement Event.tilføjTransport
 		throw new UnsupportedOperationException();
 	}
 
-	public Udflugt tilf�jUdflugt() {
-		// TODO - implement Event.tilf�jUdflugt
+	public Udflugt tilføjUdflugt() {
+		// TODO - implement Event.tilføjUdflugt
 		throw new UnsupportedOperationException();
 	}
 
