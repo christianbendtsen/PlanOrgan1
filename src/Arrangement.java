@@ -13,6 +13,6 @@ public class Arrangement {
     }
 
     public Event visEvent(){
-        
+
     }
 }
