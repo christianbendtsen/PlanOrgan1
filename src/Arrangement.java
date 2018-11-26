@@ -15,4 +15,9 @@ public class Arrangement {
     public Event visEvent(){
 
     }
+
+    public Arrangement(String arrangementnavn, double totalpris){
+        arrangementNavn = arrangementnavn;
+        totalPris = totalpris;
+    }
 }
