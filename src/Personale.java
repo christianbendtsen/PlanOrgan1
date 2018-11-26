@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Personale {
     private int Id;
     private int Pin;
@@ -9,4 +10,8 @@ public class Personale {
             return false;
         }
     }
+
+
+
+
 }
