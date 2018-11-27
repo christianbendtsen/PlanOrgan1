@@ -32,7 +32,6 @@ public class Sekretær {
     }
 
     public static void SekretærMenu() {
-
     }
 }
 
