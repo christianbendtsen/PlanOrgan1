@@ -39,7 +39,7 @@ public class Personale {
     }
     public static ArrayList<Personale> PersonaleListe = new ArrayList<Personale>();
 
-    public void addDummyDataPersonale
+    public void addDummyDataPersonale()
     {
         PersonaleListe.add(new Personale(01, 111));
         PersonaleListe.add(new Personale(02, 222));

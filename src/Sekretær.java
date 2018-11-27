@@ -1,17 +1,26 @@
+import java.util.ArrayList;
+
 public class Sekretær {
     private int Id;
     private int Pin;
 
-    public void getArrangementListe(){
-        return ArrangementListe;
+    public static ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
+
+    public void ArrangementListe() {
     }
-    public void tilføjArrangement(){}
 
-    public void sletArrangement(){}
+    public void opretArrangement() {
+        Arrangement.
+    }
 
-    public void redigerArrangement(){}
+    public void sletArrangement() {
+    }
 
-    public static void SekretærMenu(){
+    public void redigerArrangement() {
+    }
+
+    public static void SekretærMenu() {
 
     }
 }
+

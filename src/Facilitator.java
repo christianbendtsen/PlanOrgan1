@@ -5,6 +5,6 @@ public class Facilitator {
 
     public static void VisArrangementListe(){
     System.out.println("Velkommen facilitator");
-    System.out.println("Følgende arrangementer: " + Arrangement.);
+    System.out.println("Følgende arrangementer: " + Sekretær.listeAfArrangementer);
     }
 }

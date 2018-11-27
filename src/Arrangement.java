@@ -25,11 +25,9 @@ public class Arrangement {
         totalPris = totalpris;
     }
 
-    public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
-
     private void addDummyDataArrangement() {
-        listeAfArrangementer.add(new Arrangement("julefrokost", 189.9));
-        listeAfArrangementer.add(new Arrangement("Påskefrokost", 2000));
-        listeAfArrangementer.add(new Arrangement("Nytårskur", 4000));
+        Sekretær.listeAfArrangementer.add(new Arrangement("julefrokost", 1890.9));
+        Sekretær.listeAfArrangementer.add(new Arrangement("Påskefrokost", 2000));
+        Sekretær.listeAfArrangementer.add(new Arrangement("Nytårskur", 4000));
     }
 }
