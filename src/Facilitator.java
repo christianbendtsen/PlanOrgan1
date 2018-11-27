@@ -6,9 +6,9 @@ public class Facilitator {
     private int id;
     private int pin;
 
-    public static void VisArrangementListe(){
+    /*public static void VisArrangementListe(){
     System.out.println("Velkommen facilitator");
     System.out.println("Følgende arrangementer: " + Statistik.getAlleArrangementer());
-       // System.out.println(ArrayList<Arrangement>.toString(/*Sekretær.listeAfArrangementer*/));
-    }
+
+    }*/
 }

@@ -26,14 +26,14 @@ public class Arrangement {
         totalPris = totalpris;
     }
 
-    public void addDummyDataArrangement() {
+    /*public void addDummyDataArrangement() {
         Sekretær.listeAfArrangementer.add(new Arrangement("julefrokost", 1890.9));
         Sekretær.listeAfArrangementer.add(new Arrangement("Påskefrokost", 2000));
         Sekretær.listeAfArrangementer.add(new Arrangement("Nytårskur", 4000));
-    }
-
-    /*public String toString(){
-        //return "Arrangementnavn: " + arrangementNavn + ": Totalpris: " + totalPris;
-        //return Sekretær.listeAfArrangementer;
     }*/
+
+    public String toString(){
+        return "Arrangementnavn: " + arrangementNavn + ": Totalpris: " + totalPris;
+        //return Sekretær.listeAfArrangementer;
+    }
 }

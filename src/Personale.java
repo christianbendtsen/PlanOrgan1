@@ -7,7 +7,7 @@ public class Personale {
     private boolean CheckPin(int pin) {
         return this.Pin == pin;
     }
-    public static void validerBruger(){
+    /*public static void validerBruger(){
 
         System.out.println("\n\n");
         System.out.println("*********************************");
@@ -32,7 +32,7 @@ public class Personale {
             }
         }
         validerBruger();
-    }
+    }*/
     public Personale(int id, int pin){
         this.Id=id;
         this.Pin=pin;
