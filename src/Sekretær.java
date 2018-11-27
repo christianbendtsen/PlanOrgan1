@@ -10,4 +10,6 @@ public class Sekretær {
     public void sletArrangement(){}
 
     public void redigerArrangement(){}
+
+    public static void SekretærMenu(){}
 }
