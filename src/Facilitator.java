@@ -8,7 +8,7 @@ public class Facilitator {
 
     /*public static void VisArrangementListe(){
     System.out.println("Velkommen facilitator");
-    System.out.println("Følgende arrangementer: " + Sekretær.listeAfArrangementer);
-       // System.out.println(ArrayList<Arrangement>.toString(/*Sekretær.listeAfArrangementer*/));
-    }/*
+    System.out.println("Følgende arrangementer: " + Statistik.getAlleArrangementer());
+
+    }*/
 }
