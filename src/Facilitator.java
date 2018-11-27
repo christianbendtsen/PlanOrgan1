@@ -11,6 +11,11 @@ public class Facilitator {
     System.out.println("Følgende arrangementer: " + Statistik.getAlleArrangementer());
 
     }*/
-    public static void main( ) {}
-    hej med dig
+
+    public Facilitator()
+    {
+
+    }
+    /*public static void main( ) {}
+    hej med dig*/
 }

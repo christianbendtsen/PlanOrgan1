@@ -5,7 +5,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
+        StartMenu start = new StartMenu();
+        start.validerBruger();
+    }
+
+       /* ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
         //Personale.validerBruger();
         Sekretær sekretær = new Sekretær();
         listeAfArrangementer = sekretær.getListeAfArrangementer();
@@ -15,5 +19,5 @@ public class Main {
 
             System.out.println(listeAfArrangementer.get(i));
         }
-    }
+    }*/
 }

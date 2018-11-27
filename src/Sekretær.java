@@ -13,6 +13,17 @@ public class Sekretær {
         this.listeAfArrangementer = listeAfArrangementer;
     }
 
+    public void printArrangementListe()
+    {
+        listeAfArrangementer.add(new Arrangement("Julefrokost", 2000.0d));
+        listeAfArrangementer.add(new Arrangement("Påskefrokost", 2000.0d));
+        listeAfArrangementer.add(new Arrangement("Julefrokost", 2000.0d));
+
+        for (int i= 0; i < listeAfArrangementer.size(); i++){
+
+            System.out.println(listeAfArrangementer.get(i));
+        }
+    }
 
 
     public Sekretær(){

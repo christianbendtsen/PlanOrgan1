@@ -4,9 +4,15 @@ public class Personale {
     private int Id;
     private int Pin;
 
-    private boolean CheckPin(int pin) {
+    public boolean CheckPin(int pin) {
         return this.Pin == pin;
     }
+
+    public Personale(){
+
+    }
+
+
     /*public static void validerBruger(){
 
         System.out.println("\n\n");
@@ -37,7 +43,7 @@ public class Personale {
         this.Id=id;
         this.Pin=pin;
     }
-    public static ArrayList<Personale> PersonaleListe = new ArrayList<Personale>();
+    public  ArrayList<Personale> PersonaleListe = new ArrayList<Personale>();
 
     public void addDummyDataPersonale()
     {
