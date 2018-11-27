@@ -4,40 +4,34 @@ public class Personale {
     private int Id;
     private int Pin;
 
-    public boolean ValiderPersonale(int id, int pin) {
-        if (id == Id && pin == Pin) {
-            return true;
-        } else {
-            return false;
-        }
+    private boolean CheckPin(int pin) {
+        return this.Pin == pin;
     }
     public static void validerBruger(){
 
         System.out.println("\n\n");
         System.out.println("*********************************");
-        System.out.println("* Welkommen til Planorgan burger log-in *");
+        System.out.println("* Velkommen til PlanOrgan bruger log-in *");
         System.out.println("*********************************");
 
         Scanner input = new Scanner(System.in);
         for (int i = 0; i < 3; i++) {
             System.out.println("Intast venligst Id : ");
-            int inID = input.nextInt();
+            int inId = input.nextInt();
             System.out.println("Indtast venligst Pin: ");
-            int inPIN = input.nextInt();
-            if (inID == 01 && inPIN == 111) {
+            int inPin = input.nextInt();
+            if (inId == 01 && inPin == 111) {
                 Facilitator.VisArrangementListe();
             } else {
-                if (WashMenu.Accounts.get(inID).CheckPIN(inPIN)) {
-                    WashMenu.activeUser = inID;
-                    WashMenu.displayMenu();
+                if (PersonaleListe.get(inId).CheckPin(inPin)) {
+                    Sekretær.SekretærMenu();
                     break;
                 } else {
                     System.out.println("* Forkert log-in, prøv igen *");
                 }
             }
         }
-        WashMenu.endService();
-
+        validerBruger();
     }
     public Personale(int id, int pin){
         this.Id=id;

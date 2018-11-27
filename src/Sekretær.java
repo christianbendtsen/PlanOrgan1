@@ -11,5 +11,7 @@ public class Sekretær {
 
     public void redigerArrangement(){}
 
-    public static void SekretærMenu(){}
+    public static void SekretærMenu(){
+
+    }
 }
