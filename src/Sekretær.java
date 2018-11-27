@@ -10,7 +10,7 @@ public class Sekretær {
     }
 
     public void opretArrangement() {
-        Arrangement.
+        //Arrangement.
     }
 
     public void sletArrangement() {

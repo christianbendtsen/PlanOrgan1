@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 public class Statistik {
 
-    public static int getAlleArrangementer(){
+    public static ArrayList<Arrangement> getAlleArrangementer(){
 
-        return Sekretær.listeAfArrangementer.size(); // size = størrelsen på listen
+        return Sekretær.listeAfArrangementer;
     }
 }
