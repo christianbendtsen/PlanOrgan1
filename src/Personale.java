@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Personale {
     private int Id;
@@ -10,7 +11,6 @@ public class Personale {
             return false;
         }
     }
-
     public static void validerBruger(){
 
         System.out.println("\n\n");
@@ -24,8 +24,8 @@ public class Personale {
             int inID = input.nextInt();
             System.out.println("Indtast venligst Pin: ");
             int inPIN = input.nextInt();
-            if (inID == 00 && inPIN == 000) {
-                Facilitator.arrangementListe();
+            if (inID == 01 && inPIN == 111) {
+                Facilitator.VisArrangementListe();
             } else {
                 if (WashMenu.Accounts.get(inID).CheckPIN(inPIN)) {
                     WashMenu.activeUser = inID;
@@ -38,6 +38,18 @@ public class Personale {
         }
         WashMenu.endService();
 
+    }
+    public Personale(int id, int pin){
+        this.Id=id;
+        this.Pin=pin;
+    }
+    public static ArrayList<Personale> PersonaleListe = new ArrayList<Personale>();
+
+    public void addDummyDataPersonale
+    {
+        PersonaleListe.add(new Personale(01, 111));
+        PersonaleListe.add(new Personale(02, 222));
+        PersonaleListe.add(new Personale(03, 333));
     }
 
 

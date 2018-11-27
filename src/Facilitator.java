@@ -3,7 +3,8 @@ public class Facilitator {
     private int id;
     private int pin;
 
-    public getArrangementList(){
-
+    public static void VisArrangementListe(){
+    System.out.println("Velkommen facilitator");
+    System.out.println("Følgende arrangementer: " + Arrangement.);
     }
 }
