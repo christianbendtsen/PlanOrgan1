@@ -7,8 +7,7 @@ public  class StartMenu {
     Sekretær sekretær = new Sekretær();
     Facilitator facilitator = new Facilitator();
 
-    /*public void validerBruger(){
-
+    public static void validerBruger(){
         System.out.println("\n\n");
         System.out.println("*********************************");
         System.out.println("* Velkommen til PlanOrgan bruger log-in *");
@@ -21,9 +20,9 @@ public  class StartMenu {
             System.out.println("Indtast venligst Pin: ");
             int inPin = input.nextInt();
             if (inId == 01 && inPin == 111) {
-                sekretær.printArrangementListe();
+                Facilitator.facilitatormenu();
             } else {
-                if (personale.PersonaleListe.get(inId).CheckPin(inPin)) {
+                if (Personale.PersonaleListe.get(inId).CheckPin(inPin)) {
                     Sekretær.SekretærMenu();
                     break;
                 } else {
@@ -32,6 +31,6 @@ public  class StartMenu {
             }
         }
         validerBruger();
-    }*/
+    }
 
 }
