@@ -83,7 +83,7 @@ public class Event {
 				break;
 		}
 	}
-
+hejhej
 	/*public Møde tilfojMøde() {
 		// TODO - implement Event.tilføjMøde
 		throw new UnsupportedOperationException();
