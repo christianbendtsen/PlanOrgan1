@@ -53,7 +53,7 @@ public class Event {
 		return "\n" + "Eventnavn: " + navn + ". \n" + "Eventbeskrivelse: " + beskrivelse + ". \n"+ "Start tid: " + tidStart +
 				". \n" + "Slut tid: " + tidSlut;
 	}
-
+ hej hej
 
 
 	/*public Møde tilfojMøde() {
