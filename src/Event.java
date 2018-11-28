@@ -1,14 +1,14 @@
 public class Event {
 
-		private String navn;
-		private int typeAfEvent;
-		private double pris;
-		public Facilitator facilitator;
-		private String beskrivelse;
-		private int startDato;
-		private int slutDato;
-		private int tidStart;
-		private int tidSlut;
+	private String navn;
+	private int typeAfEvent;
+	private double pris;
+	public Facilitator facilitator;
+	private String beskrivelse;
+	private int startDato;
+	private int slutDato;
+	private int tidStart;
+	private int tidSlut;
 
 	public Møde tilfojMøde() {
 		// TODO - implement Event.tilføjMøde

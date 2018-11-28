@@ -7,7 +7,7 @@ public  class StartMenu {
     Sekretær sekretær = new Sekretær();
     Facilitator facilitator = new Facilitator();
 
-    public void validerBruger(){
+    /*public void validerBruger(){
 
         System.out.println("\n\n");
         System.out.println("*********************************");
@@ -32,6 +32,6 @@ public  class StartMenu {
             }
         }
         validerBruger();
-    }
+    }*/
 
 }
