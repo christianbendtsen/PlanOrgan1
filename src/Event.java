@@ -1,16 +1,28 @@
+import java.util.Scanner;
+
 public class Event {
 
 	private String navn;
-	private int typeAfEvent;
+	//private int typeAfEvent;
 	private double pris;
-	public Facilitator facilitator;
+	//public Facilitator facilitator;
 	private String beskrivelse;
 	private int startDato;
 	private int slutDato;
 	private int tidStart;
 	private int tidSlut;
 
-	public Møde tilfojMøde() {
+	}
+
+	public String toString()
+	{
+		return "\n" + "Eventnavn: " + navn + ". \n" + "Eventbeskrivelse: " + beskrivelse + ". \n"+ "Start tid: " + tidStart +
+				". \n" + "Slut tid: " + tidSlut;
+	}
+
+
+
+	/*public Møde tilfojMøde() {
 		// TODO - implement Event.tilføjMøde
 		throw new UnsupportedOperationException();
 	}
