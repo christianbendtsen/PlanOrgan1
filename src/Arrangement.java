@@ -58,6 +58,7 @@ public class Arrangement {
         System.out.println(arrangement);
         return arrangement;
 
+
     }
 
     public String toString()
