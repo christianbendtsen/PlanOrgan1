@@ -26,7 +26,7 @@ public class Sekretær {
     }*/
 
 
-    /*public Sekretær(){
+    public Sekretær(){
 
     }
     public void ArrangementListe() {
@@ -44,6 +44,6 @@ public class Sekretær {
 
     public static void SekretærMenu() {
 
-    }*/
+    }
 }
 

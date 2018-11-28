@@ -51,6 +51,8 @@ public class Arrangement {
         System.out.println("**Tilføj event**");
         Event e = event.tilføjEvent();
 
+        event.flereEvent();
+
         Arrangement arrangement = new Arrangement(arrangementNavn, kundeEmail, kundeTlf, e);
         System.out.println("**Følgende Arrangement er oprettet**");
         System.out.println(arrangement);

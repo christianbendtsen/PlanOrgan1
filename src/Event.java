@@ -67,6 +67,22 @@ public class Event {
 	}
 
 
+	public void flereEvent(){
+		Scanner console = new Scanner(System.in);
+		System.out.println("Ønsker du at afslutte eller tilføje flere events?");
+		int in = console.nextInt();
+		switch(in) {
+			case 1:
+				System.out.println("Tilføj nyt event ");
+				tilføjEvent();
+
+				break;
+			case 2:
+				System.out.println("Afslut eventliste");
+				Sekretær.SekretærMenu();
+				break;
+		}
+	}
 
 	/*public Møde tilfojMøde() {
 		// TODO - implement Event.tilføjMøde
