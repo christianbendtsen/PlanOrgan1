@@ -8,6 +8,8 @@ public class Main {
         Arrangement a = new Arrangement();
         a.opretArrangement();
 
+
+
         /*StartMenu start = new StartMenu();
         start.validerBruger();*/
     }

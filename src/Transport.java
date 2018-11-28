@@ -1,9 +1,28 @@
-public class Transport {
+public class Transport extends Event {
 
-    private String transportMiddel;
-    //private  void startTidspunkt;
-    //private  void slutTidspunkt;
-    private String pickUp;
-    private String dropOff;
+    String transportMiddel;
+    double startTidspunkt;
+    double slutTidspunkt;
+    String pickUp;
+    String dropOff;
 
+    void setTransportMiddel(String transportMiddel){
+        this.transportMiddel = transportMiddel;
+    }
+
+    void setStartTidspunkt(double startTidspunkt){
+        this.startTidspunkt = startTidspunkt;
+    }
+
+    void setSlutTidspunkt(double slutTidspunkt){
+        this.slutTidspunkt = slutTidspunkt;
+    }
+
+    void setPickUp(String pickUp){
+        this.pickUp = pickUp;
+    }
+
+    void setDropOff(String dropOff){
+        this.dropOff = dropOff;
+    }
 }
