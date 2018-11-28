@@ -20,14 +20,9 @@ public class Personale {
 
     public void addDummyDataPersonale()
     {
-        PersonaleListe.add(new Personale(01, 111));
-        PersonaleListe.add(new Personale(02, 222));
-        PersonaleListe.add(new Personale(03, 333));
+        PersonaleListe.add(new Personale(1, 111));
+        PersonaleListe.add(new Personale(2, 222));
+        PersonaleListe.add(new Personale(3, 333));
     }
-
-
-
-
-
-
 }
+

@@ -11,7 +11,7 @@ public class Facilitator {
     System.out.println("Følgende arrangementer: " + Statistik.getAlleArrangementer());
 
     }*/
-    public static void facilitatormenu(){
+    public void facilitatormenu(){
     System.out.println("Velkommen facilitator");
     }
 
