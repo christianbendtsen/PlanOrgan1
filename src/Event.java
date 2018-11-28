@@ -68,17 +68,20 @@ public class Event {
 
 
 	public void flereEvent(){
-		Scanner console = new Scanner(System.in);
-		System.out.println("Ønsker du at afslutte eller tilføje flere events?");
-		int in = console.nextInt();
+        Scanner console = new Scanner(System.in);
+        System.out.println("************************************");
+		System.out.println("Ønsker du at tilføje flere events eller afslutte eventliste?");
+        System.out.println("1. Tilføj nyt event");
+        System.out.println("2. Afslut eventliste");
+        int in = console.nextInt();
 		switch(in) {
 			case 1:
-				System.out.println("Tilføj nyt event ");
+				System.out.println("**Tilføjer nyt event**");
 				tilføjEvent();
 
 				break;
 			case 2:
-				System.out.println("Afslut eventliste");
+				System.out.println("**Afslutter eventliste**");
 				Sekretær.SekretærMenu();
 				break;
 		}
