@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Arrangement {
@@ -11,6 +12,11 @@ public class Arrangement {
     public Event event = new Event();
     //public Event listeAfEvents;
     //public Facilitator listeAfFacilitator;
+    private ArrayList<Event> eventListe = new ArrayList<Event>();
+
+    public ArrayList<Event> getEventListe (){
+        return eventListe;
+    }
 
 
    /* public Event tilføjEvent() {
@@ -23,12 +29,12 @@ public class Arrangement {
 
     }*/
 
-    public Arrangement (String arrangementNavn, String kundeEmail, int kundeTlf, Event e)
+    public Arrangement (String arrangementNavn, String kundeEmail, int kundeTlf, ArrayList<Event> eventListe)
     {
         this.arrangementNavn=arrangementNavn;
         this.kundeEmail=kundeEmail;
         this.kundeTlf=kundeTlf;
-        this.event=e;
+        this.eventListe=eventListe;
     }
     public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
 
@@ -67,14 +73,28 @@ public class Arrangement {
         System.out.println();
         String kundeEmail = console.nextLine();
         System.out.print("Kundes telefonnummer: ");
-        int kundeTlf = console.nextInt();
+        int kundeTlf;
+        while (true) {
+            try {
+                kundeTlf = console.nextInt();
+                break;
+            }
+            catch (InputMismatchException e) {
+                System.out.print("Input er ikke et tal. Skriv venligst tal: ");
+                console.nextLine();
+            }
+        }
 
-        System.out.println("**Tilføj event**");
-        Event e = event.tilføjEvent();
+        System.out.println("**Tilføj event 1=ja, 2=nej**");
+        int valg = console.nextInt();
+        do {
+            eventListe.add(event.tilføjEvent());
+            System.out.println("**Tilføj event 1=ja, 2=nej**");
+            valg = console.nextInt();
+        }
+        while (valg == 1);
 
-        event.flereEvent();
-
-        Arrangement arrangement = new Arrangement(arrangementNavn, kundeEmail, kundeTlf, e);
+        Arrangement arrangement = new Arrangement(arrangementNavn, kundeEmail, kundeTlf, eventListe);
         System.out.println("**Følgende Arrangement er oprettet**");
         System.out.println(arrangement);
         return arrangement;
@@ -85,7 +105,7 @@ public class Arrangement {
     public String toString()
     {
         return "\n" + "Arrangementnavn: " + arrangementNavn + ". \n" + "Kundes email: " + kundeEmail +
-                ".\n" + "Kundes telefonnummer: " + kundeTlf + ". \n\n" + "Der er tilknyttet følgende event:" + event;
+                ".\n" + "Kundes telefonnummer: " + kundeTlf + ". \n\n" + "Der er tilknyttet følgende event:" + eventListe;
     }
  /*   public Arrangement(String arrangementnavn, double totalpris) {
         arrangementNavn = arrangementnavn;
