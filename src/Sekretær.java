@@ -6,6 +6,7 @@ public class Sekretær {
     public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
 
     public ArrayList<Arrangement> getListeAfArrangementer() {
+
         return listeAfArrangementer;
     }
 

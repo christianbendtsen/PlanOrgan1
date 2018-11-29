@@ -6,14 +6,14 @@ public class Event {
     private String navn;
     //private int typeAfEvent;
     private int pris = 100;
-    //String  facilitator;
     private String beskrivelse;
     private String startDato;
     private String slutDato;
     private double tidStart;
     private double tidSlut;
+    String facilitator;
 
-    public Event(String navn, String beskrivelse, int pris, String startDato, String slutDato, double tidStart, double tidSlut) {
+    public Event(String navn, String beskrivelse, int pris, String startDato, String slutDato, double tidStart, double tidSlut, String facilitator) {
         this.navn = navn;
         this.pris = pris;
         this.beskrivelse = beskrivelse;
@@ -21,6 +21,7 @@ public class Event {
         this.slutDato = slutDato;
         this.tidStart = tidStart;
         this.tidSlut = tidSlut;
+        this.facilitator=facilitator;
     }
 
     public Event() {
@@ -30,11 +31,9 @@ public class Event {
     public Event tilføjEvent() {
         Scanner console = new Scanner(System.in);
 
-        //System.out.println("**Udfyld venligst data for nyt event**");
         System.out.print("Eventnavn: ");
         System.out.println();
         String navn = console.nextLine();
-
         System.out.print("Uddybende beskrivelse: ");
         System.out.println();
         String beskrivelse = console.nextLine();
@@ -42,25 +41,27 @@ public class Event {
         //System.out.print("Pris for opstart af event: ");
         //int pris = console.nextInt();
 
-        System.out.print("Startdato for Event: ");
-        String starDato = console.nextLine();
-        System.out.print("Slutdato for Event: ");
+        System.out.print("Startdato for Event (dd.MM.yyyy): ");
+        String startDato = console.nextLine();
+        System.out.print("Slutdato for Event (dd.MM.yyyy): ");
         String slutDato = console.nextLine();
         System.out.print("Starttid: ");
         double tidStart = console.nextDouble();
         System.out.print("Sluttid: ");
         double tidSlut = console.nextDouble();
+		System.out.print("Ansvarlig facilitator: ");
+		String facilitator = console.next();
 
-        Event event = new Event(navn, beskrivelse, pris, starDato, slutDato, tidStart, tidSlut);
-        //System.out.println("**Følgende event er blevet tilføjet dit arrangement**");
-        //System.out.println(event);
+        Event event = new Event(navn, beskrivelse, pris, startDato, slutDato, tidStart, tidSlut, facilitator);
         return event;
 
     }
 
     public String toString() {
-        return "\n" + "Eventnavn: " + navn + ". \n" + "Eventbeskrivelse: " + beskrivelse + ". \n" + "Pris: " + pris + "\n" + "Startdato: " + startDato + "\n" + "Slutdato: " + slutDato + "\n" + "Start tid: " + tidStart +
-                ". \n" + "Slut tid: " + tidSlut;
+        return "\n" + "Eventnavn: " + navn + " \n" + "Eventbeskrivelse: " + beskrivelse + " \n" +
+				"Pris: " + pris + "\n" + "Startdato: " + startDato + "\n" + "Slutdato: " + slutDato + "\n" +
+				"Start tid: " + tidStart + ". \n" + "Slut tid: " + tidSlut + "\n" +
+				"Ansvarlig facilitator: " + facilitator + "\n";
     }
 
 
