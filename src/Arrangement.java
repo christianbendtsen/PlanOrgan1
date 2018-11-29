@@ -30,6 +30,27 @@ public class Arrangement {
         this.kundeTlf=kundeTlf;
         this.event=e;
     }
+    public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
+
+    public ArrayList<Arrangement> getListeAfArrangementer() {
+        return listeAfArrangementer;
+    }
+
+    public void setListeAfArrangementer(ArrayList<Arrangement> listeAfArrangementer) {
+        this.listeAfArrangementer = listeAfArrangementer;
+    }
+    public void printArrangementListe()
+    {
+        listeAfArrangementer.add(new Arrangement("Julefrokost", "@gmail.c",   ))
+        listeAfArrangementer.add(new Arrangement(""))
+
+        for (int i= 0; i < listeAfArrangementer.size(); i++){
+
+            System.out.println(listeAfArrangementer.get(i));
+
+
+        }
+    }
     public Arrangement()
     {
 
@@ -66,19 +87,13 @@ public class Arrangement {
         return "\n" + "Arrangementnavn: " + arrangementNavn + ". \n" + "Kundes email: " + kundeEmail +
                 ".\n" + "Kundes telefonnummer: " + kundeTlf + ". \n\n" + "Der er tilknyttet følgende event:" + event;
     }
-    /*public Arrangement(String arrangementnavn, double totalpris) {
+ /*   public Arrangement(String arrangementnavn, double totalpris) {
         arrangementNavn = arrangementnavn;
         totalPris = totalpris;
-    }*/
+    }
 
-    /*public void addDummyDataArrangement() {
-        Sekretær.listeAfArrangementer.add(new Arrangement("julefrokost", 1890.9));
-        Sekretær.listeAfArrangementer.add(new Arrangement("Påskefrokost", 2000));
-        Sekretær.listeAfArrangementer.add(new Arrangement("Nytårskur", 4000));
-    }*/
-
-    /*public String toString(){
+         public String toString(){
         return "Arrangementnavn: " + arrangementNavn + ": Totalpris: " + totalPris;
-        //return Sekretær.listeAfArrangementer;
+        return Sekretær.listeAfArrangementer;
     }*/
 }

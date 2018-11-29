@@ -75,7 +75,6 @@ public class Event {
             case 1:
                 System.out.println("**Tilføjer nyt event**");
                 this.tilføjEvent();
-
                 break;
             case 2:
                 System.out.println("**Afslutter eventliste**");
