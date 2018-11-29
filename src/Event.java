@@ -65,7 +65,7 @@ public class Event {
     }
 
 
-    public void flereEvent() {
+    /*public void flereEvent() {
         Scanner console = new Scanner(System.in);
         System.out.println("************************************");
         System.out.println("Ønsker du at tilføje flere events eller afslutte eventliste?");
@@ -82,5 +82,5 @@ public class Event {
                 this.sekretær.SekretærMenu();
                 break;
         }
-    }
+    }*/
 }

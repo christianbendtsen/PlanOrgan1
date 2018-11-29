@@ -4,6 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Arrangement {
+
     private String arrangementNavn;
     //private double totalVarighed;
     //private double totalPris;
@@ -13,6 +14,10 @@ public class Arrangement {
     //public Event listeAfEvents;
     //public Facilitator listeAfFacilitator;
 
+    public void fakeMenuTilFacilitator(){
+        System.out.println("You know nothing Jon Snow");
+    }
+
     public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
 
     public ArrayList<Arrangement> getListeAfArrangementer() {
@@ -20,23 +25,11 @@ public class Arrangement {
         return listeAfArrangementer;
     }
 
-
     private ArrayList<Event> eventListe = new ArrayList<Event>();
 
     public ArrayList<Event> getEventListe (){
         return eventListe;
     }
-
-
-   /* public Event tilføjEvent() {
-        return tilføjEvent();
-
-    }
-
-    public Event visEvent() {
-        return  visEvent();
-
-    }*/
 
     public Arrangement (String arrangementNavn, String kundeEmail, int kundeTlf, ArrayList<Event> eventListe)
     {
@@ -125,4 +118,6 @@ public class Arrangement {
         return "Arrangementnavn: " + arrangementNavn + ": Totalpris: " + totalPris;
         return Sekretær.listeAfArrangementer;
     }*/
+
+
 }

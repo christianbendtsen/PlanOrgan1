@@ -4,10 +4,11 @@ import java.util.Scanner;
 public class Facilitator {
     private double pris;
     private int id;
-    private int pin;
-    Arrangement arrangement = new Arrangement();
+    private int pin
+            ;
     Sekretær sekretær = new Sekretær();
     StartMenu startMenu = new StartMenu();
+    Arrangement arrangement = new Arrangement();
 
     /*public static void VisArrangementListe(){
     System.out.println("Velkommen facilitator");
@@ -22,7 +23,7 @@ public class Facilitator {
     System.out.println("2. Log ud");
     int in = console.nextInt();
     switch (in){
-        case 1: this.sekretær.printArrangementListe();
+        case 1: this.arrangement.fakeMenuTilFacilitator();
         break;
 
         case  2: this.startMenu.validerBruger();
