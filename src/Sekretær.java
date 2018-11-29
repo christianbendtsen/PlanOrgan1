@@ -3,12 +3,7 @@ import java.util.ArrayList;
 public class Sekretær {
    private String Arrangementnavn;
    private double Pris;
-    public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
-
-    public ArrayList<Arrangement> getListeAfArrangementer() {
-
-        return listeAfArrangementer;
-    }
+   
 
 
     public Sekretær(){

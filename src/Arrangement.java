@@ -12,6 +12,15 @@ public class Arrangement {
     public Event event = new Event();
     //public Event listeAfEvents;
     //public Facilitator listeAfFacilitator;
+
+    public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
+
+    public ArrayList<Arrangement> getListeAfArrangementer() {
+
+        return listeAfArrangementer;
+    }
+
+
     private ArrayList<Event> eventListe = new ArrayList<Event>();
 
     public ArrayList<Event> getEventListe (){
