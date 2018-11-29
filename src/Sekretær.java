@@ -42,8 +42,8 @@ public class Sekretær {
     public void redigerArrangement() {
     }
 
-    public static void SekretærMenu() {
-
+    public void SekretærMenu() {
+    System.out.println("Velkommen Sekretær");
     }
 }
 

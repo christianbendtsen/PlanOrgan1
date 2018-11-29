@@ -1,28 +1,22 @@
 import java.util.ArrayList;
 
-public class Main {
+public class Main
+{
 
+    public static void main(String[] args)
+    {
+        StartMenu startMenu = new StartMenu();
 
-    public static void main(String[] args) {
+        startMenu.validerBruger();
 
         Arrangement a = new Arrangement();
+
         a.opretArrangement();
 
-
-
-        /*StartMenu start = new StartMenu();
-        start.validerBruger();*/
+        StartMenu start = new StartMenu();
     }
+        ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
 
-       /* ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
-        //Personale.validerBruger();
         Sekretær sekretær = new Sekretær();
-        listeAfArrangementer = sekretær.getListeAfArrangementer();
-        listeAfArrangementer.add(new Arrangement("Julefrokost", 2000.0d));
 
-        for (int i= 0; i < listeAfArrangementer.size(); i++){
-
-            System.out.println(listeAfArrangementer.get(i));
-        }
-    }*/
 }

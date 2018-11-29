@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Event {
+	Sekretær sekretær = new Sekretær();
 
 	private String navn;
 	//private int typeAfEvent;
@@ -77,12 +78,12 @@ public class Event {
 		switch(in) {
 			case 1:
 				System.out.println("**Tilføjer nyt event**");
-				tilføjEvent();
+				this.tilføjEvent();
 
 				break;
 			case 2:
 				System.out.println("**Afslutter eventliste**");
-				Sekretær.SekretærMenu();
+				this.sekretær.SekretærMenu();
 				break;
 		}
 	}
