@@ -2,21 +2,14 @@ import java.util.ArrayList;
 
 public class Main
 {
-
     public static void main(String[] args)
     {
         StartMenu startMenu = new StartMenu();
-
+        Personale.addDummyDataPersonale();
         startMenu.validerBruger();
 
         Arrangement a = new Arrangement();
 
-        a.opretArrangement();
-
-        StartMenu start = new StartMenu();
+        //a.opretArrangement();
     }
-        ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
-
-        Sekretær sekretær = new Sekretær();
-
 }

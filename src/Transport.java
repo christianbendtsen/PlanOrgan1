@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Transport {
+/*public class Transport {
 
 
     public String transportMiddel;
@@ -46,39 +46,5 @@ public class Transport {
                 ". \n" + "Slut tid: " + tidSlut;
     }
 
-
-
-
-
-
-
-    // Set metoder
-
-    /*void setTransportMiddel(String transportMiddel){
-        this.transportMiddel = transportMiddel;
-    }
-
-    void setStartTidspunkt(double startTidspunkt){
-        this.startTidspunkt = startTidspunkt;
-    }
-
-    void setSlutTidspunkt(double slutTidspunkt){
-        this.slutTidspunkt = slutTidspunkt;
-    }
-
-    void setPickUp(String pickUp){
-        this.pickUp = pickUp;
-    }
-
-    void setDropOff(String dropOff){
-        this.dropOff = dropOff;
-    }
-
-    @Override
-    void info() {
-        String infoString = "navn: " + navn + " pris: " + pris + " Start dato: " + startDato  + " Slut dato: " + slutDato + " Start tidspunkt" + tidStart + " Slut tidspunkt" + tidSlut + "Transportmiddel: " + transportMiddel + "Starttidspunkt for transport: " + startTidspunkt + "Sluttidspunkt for transport: " + slutTidspunkt + "Pick up sted: " + pickUp + "Drop off sted: " + dropOff;
-        System.out.println( infoString );
-    }*/
-
-}
+}*/
 
