@@ -27,4 +27,3 @@ public class Personale {
         PersonaleListe.add(new Personale(4, 444));
     }
 }
-

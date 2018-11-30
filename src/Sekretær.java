@@ -27,7 +27,10 @@ public class Sekretær {
      Scanner console = new Scanner (System.in);
     System.out.println("Velkommen Sekretær");
     System.out.println("Vælg følgende handling: ");
-    System.out.println();
+    System.out.println("1. Book Arrangement:");
+    Arrangement a = new Arrangement();
+    a.opretArrangement();
+
     }
 }
 

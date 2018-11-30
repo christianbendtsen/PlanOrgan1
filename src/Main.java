@@ -10,6 +10,5 @@ public class Main
 
         Arrangement a = new Arrangement();
 
-        a.opretArrangement();
     }
 }
