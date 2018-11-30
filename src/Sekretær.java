@@ -1,16 +1,16 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Sekretær {
    private String Arrangementnavn;
    private double Pris;
-   
-
 
     public Sekretær(){
-
     }
 
     public void ArrangementListe() {
+    System.out.println("You know nothing Jon Snow");
+    StartMenu.validerBruger();
     }
 
     public void opretArrangement() {
@@ -23,8 +23,11 @@ public class Sekretær {
     public void redigerArrangement() {
     }
 
-    public void SekretærMenu(){
+    public static void SekretærMenu(){
+     Scanner console = new Scanner (System.in);
     System.out.println("Velkommen Sekretær");
+    System.out.println("Vælg følgende handling: ");
+    System.out.println();
     }
 }
 

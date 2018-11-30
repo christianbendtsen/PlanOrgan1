@@ -14,10 +14,18 @@ public class Arrangement {
     //public Event listeAfEvents;
     //public Facilitator listeAfFacilitator;
 
-    public void fakeMenuTilFacilitator(){
+    public static void fakeMenuTilFacilitator() {
         System.out.println("You know nothing Jon Snow");
-    }
-
+        System.out.println("Vælg næste handling:");
+        System.out.println("1. Log ud");
+        Scanner console = new Scanner(System.in);
+        int in = console.nextInt();
+        switch (in) {
+            case 1:
+                StartMenu.validerBruger();
+                break;
+        }
+/*
     public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
 
     public ArrayList<Arrangement> getListeAfArrangementer() {
@@ -38,27 +46,7 @@ public class Arrangement {
         this.kundeTlf=kundeTlf;
         this.eventListe=eventListe;
     }
-    /*public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
 
-    public ArrayList<Arrangement> getListeAfArrangementer() {
-        return listeAfArrangementer;
-    }
-
-    public void setListeAfArrangementer(ArrayList<Arrangement> listeAfArrangementer) {
-        this.listeAfArrangementer = listeAfArrangementer;
-    }*/
-    /*public void printArrangementListe()
-    {
-        listeAfArrangementer.add(new Arrangement("Julefrokost", "@gmail.c",   ))
-        listeAfArrangementer.add(new Arrangement(""))
-
-        for (int i= 0; i < listeAfArrangementer.size(); i++){
-
-            System.out.println(listeAfArrangementer.get(i));
-
-
-        }
-    }*/
     public Arrangement()
     {
 
@@ -109,9 +97,7 @@ public class Arrangement {
         return "\n" + "Arrangementnavn: " + arrangementNavn + ". \n" + "Kundes email: " + kundeEmail +
                 ".\n" + "Kundes telefonnummer: " + kundeTlf + ". \n\n" + "Der er tilknyttet følgende event:" + eventListe;
     }
- /*   public Arrangement(String arrangementnavn, double totalpris) {
-        arrangementNavn = arrangementnavn;
-        totalPris = totalpris;
+*/
     }
 
          public String toString(){
