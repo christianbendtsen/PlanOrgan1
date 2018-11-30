@@ -10,8 +10,6 @@ public class Sekretær {
 
     }
 
-
-
     public void ArrangementListe() {
     }
 
