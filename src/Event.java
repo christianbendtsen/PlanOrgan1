@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Event {
     Sekretær sekretær = new Sekretær(); //bruger vi på linje 86
-
+	Transport t = new Transport();
     private String navn;
     //private int typeAfEvent;
     private int pris = 100;
@@ -51,7 +51,8 @@ public class Event {
         double tidSlut = console.nextDouble();
 		System.out.print("Ansvarlig facilitator: ");
 		String facilitator = console.next();
-
+		Transport trans = t.tilføjEventType();
+		System.out.print (trans);
         Event event = new Event(navn, beskrivelse, pris, startDato, slutDato, tidStart, tidSlut, facilitator);
         return event;
 

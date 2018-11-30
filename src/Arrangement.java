@@ -45,7 +45,7 @@ public class Arrangement {
         this.kundeTlf=kundeTlf;
         this.eventListe=eventListe;
     }
-    public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
+    /*public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
 
     public ArrayList<Arrangement> getListeAfArrangementer() {
         return listeAfArrangementer;
@@ -53,8 +53,8 @@ public class Arrangement {
 
     public void setListeAfArrangementer(ArrayList<Arrangement> listeAfArrangementer) {
         this.listeAfArrangementer = listeAfArrangementer;
-    }
-    public void printArrangementListe()
+    }*/
+    /*public void printArrangementListe()
     {
         listeAfArrangementer.add(new Arrangement("Julefrokost", "@gmail.c",   ))
         listeAfArrangementer.add(new Arrangement(""))
@@ -65,7 +65,7 @@ public class Arrangement {
 
 
         }
-    }
+    }*/
     public Arrangement()
     {
 

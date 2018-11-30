@@ -14,7 +14,7 @@ public class Facilitator {
     System.out.println("Følgende arrangementer: " + Statistik.getAlleArrangementer());
 
     }*/
-    public void facilitatormenu(){
+    /*public void facilitatormenu(){
         Scanner console = new Scanner(System.in);
     System.out.println("Velkommen facilitator");
     System.out.println("Du har følgende muligheder: ");
@@ -27,14 +27,14 @@ public class Facilitator {
 
         case  2: this.startMenu.validerBruger();
         break;
-    }
+    }*/
 
-    }
+    //}
 
-    public Facilitator()
+    /*public Facilitator()
     {
 
-    }
+    }*/
     /*public static void main( ) {}
     hej med dig*/
 }

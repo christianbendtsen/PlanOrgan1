@@ -5,18 +5,18 @@ public class Main
 
     public static void main(String[] args)
     {
-        StartMenu startMenu = new StartMenu();
+        //StartMenu startMenu = new StartMenu();
 
-        startMenu.validerBruger();
+        //startMenu.validerBruger();
 
         Arrangement a = new Arrangement();
 
         a.opretArrangement();
 
-        StartMenu start = new StartMenu();
+        //StartMenu start = new StartMenu();
     }
-        ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
+        //ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
 
-        Sekretær sekretær = new Sekretær();
+        //Sekretær sekretær = new Sekretær();
 
 }
