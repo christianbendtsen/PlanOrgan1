@@ -75,6 +75,11 @@ public class Arrangement {
         Arrangement arrangement = new Arrangement(arrangementNavn, kundeEmail, kundeTlf, eventListe);
         System.out.println("**Følgende Arrangement er oprettet**");
         System.out.println(arrangement);
+
+        String indhold = Filer.getIndhold("arrangementer.csv");//oprindeligt arrangementer.csv
+        indhold += "\n" + arrangement;//tilføjer den nye
+        Filer.skrivFil("arrangementer.csv", indhold);
+        
         return arrangement;
 
 
