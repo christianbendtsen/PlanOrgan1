@@ -25,7 +25,7 @@ public class Arrangement {
                 StartMenu.validerBruger();
                 break;
         }
-/*
+
     public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
 
     public ArrayList<Arrangement> getListeAfArrangementer() {
@@ -97,13 +97,9 @@ public class Arrangement {
         return "\n" + "Arrangementnavn: " + arrangementNavn + ". \n" + "Kundes email: " + kundeEmail +
                 ".\n" + "Kundes telefonnummer: " + kundeTlf + ". \n\n" + "Der er tilknyttet følgende event:" + eventListe;
     }
-*/
+
     }
-
-         public String toString(){
-        return "Arrangementnavn: " + arrangementNavn + ": Totalpris: " + totalPris;
-        return Sekretær.listeAfArrangementer;
-    }*/
+ }
 
 
-}
+
