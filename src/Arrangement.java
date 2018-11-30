@@ -11,20 +11,8 @@ public class Arrangement {
     public String kundeEmail;
     public int kundeTlf;
     public Event event = new Event();
-    //public Event listeAfEvents;
+    public Event listeAfEvents;
     //public Facilitator listeAfFacilitator;
-
-    public static void fakeMenuTilFacilitator() {
-        System.out.println("You know nothing Jon Snow");
-        System.out.println("Vælg næste handling:");
-        System.out.println("1. Log ud");
-        Scanner console = new Scanner(System.in);
-        int in = console.nextInt();
-        switch (in) {
-            case 1:
-                StartMenu.validerBruger();
-                break;
-        }
 
     public ArrayList<Arrangement> listeAfArrangementer = new ArrayList<Arrangement>();
 
@@ -98,8 +86,8 @@ public class Arrangement {
                 ".\n" + "Kundes telefonnummer: " + kundeTlf + ". \n\n" + "Der er tilknyttet følgende event:" + eventListe;
     }
 
-    }
- }
+}
+
 
 
 
